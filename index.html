@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAYCORA - Game Demo Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="Logo.svg" alt="PLAYCORA Logo" class="logo-img"></div>
+        <div class="header-controls">
+            <button id="backButton" class="back-btn">← BACK TO GAMES</button>
+            <button class="contact" type="button">CONTACT US</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="games-container" id="gameSelection">
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="aviatorPick.png" alt="Aviator Bomber" class="game-thumbnail">
+                </div>
+                <button class="play-btn" data-game="aviator">PLAY</button>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="princePick.png" alt="Prince Crash" class="game-thumbnail">
+                </div>
+                <button class="play-btn" data-game="prince">PLAY</button>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="unitySlot.png" alt="Unity Slot" class="game-thumbnail">
+                </div>
+                <button class="play-btn" data-game="unityslot">PLAY</button>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="vercitalSlot.png" alt="Vertical Slot" class="game-thumbnail">
+                </div>
+                <button class="play-btn" data-game="verticalslot">PLAY</button>
+            </div>
+        </div>
+
+        <!-- Game iframe container (initially hidden) -->
+        <div id="gameContainer" class="game-container">
+            <div id="currentGameTitle" class="game-title-display"></div>
+            <div id="userIndicator" class="user-indicator"></div>
+            <iframe id="gameFrame" class="game-frame" src="about:blank"></iframe>
+        </div>
+    </main>
+
+    <!-- Loading overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="loader"></div>
+        <p>Loading game...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
