@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Game URLs
     const GAME_URLS = {
-        aviator: 'http://aviator-bomber-demo.s3-website.eu-north-1.amazonaws.com/',
+        aviator: 'https://ngrnyi.github.io/aviabomber',
         prince: 'http://prince-crash-game.s3-website.eu-north-1.amazonaws.com',
-        unityslot: 'http://slot-unity-demo.s3-website.eu-north-1.amazonaws.com',
-        verticalslot: 'http://vertical-slot-game.s3-website.eu-north-1.amazonaws.com'
+        unityslot: 'https://ngrnyi.github.io/egyptslot',
+        verticalslot: 'https://ngrnyi.github.io/antiqueSlot/'
     };
 
     // Game titles
